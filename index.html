@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Grocery Store by G201021</title>
+
+
+    <!--this is to add a small icon for the tab. its called the favicon-->
+    <link rel="icon" type="image/icon" href="image/favicon.png">
+
+
+    <!--code for font awesemoe cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--code for font awesemoe cdn-->
+
+    <!--code for css file-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--code for css file-->
+
+    <!--this link here connects to a stile called swiperjs.com which adds slider feature to the "our products" section-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!--image would not display-->
+
+    <!--this changes the scale of the site based on the screen size of device being used-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <!--header section-->
+    <header class="header">
+        <a href="#" class="logo"> <i class="fa-solid fa-m"></i>ercy University Market </a>
+
+        <nav class="navbar">
+            <a href="#home"> home</a>
+            <a href="#features"> features</a>
+            <a href="#products"> products</a>
+            <a href="#reviews"> reviews</a>
+            <a href="#blogs"> blogs</a>
+            <a href="#stuff"> stuff</a>
+        </nav>
+
+        <!--icons for the top banner (bar,search,user,cart)-->
+        <div class="icons">
+            <div class="fa fa-bars" id="menu-btn"></div>
+            <div class="fa fa-search" id="search-btn"></div>
+            <div class="fa fa-shopping-cart" id="cart-btn"></div>
+            <div class="fa fa-user" id="login-btn"></div>
+        </div>
+
+        <form class="search-form">
+            <input type="search" id="search-box" placeholder="search here....">
+            <label for="search-box" class="fa fa-search"></label>
+        </form>
+
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fa-regular fa-trash-can"></i>
+                <img src="image/cart-img-1.png" width="125" height="150">
+                <div class="content">
+                    <h3>watermelon</h3>
+                    <span class="price"> $5.99/-</span>
+                    <span class="quantity">Qty: 1</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fa-regular fa-trash-can"></i>
+                <img src="image/cart-img-2.png" width="125" height="100">
+                <div class="content">
+                    <h3>red onion</h3>
+                    <span class="price"> $5.99/-</span>
+                    <span class="quantity">Qty: 1</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fa-regular fa-trash-can"></i>
+                <img src="image/cart-img-3.png" width="125" height="100">
+                <div class="content">
+                    <h3>seasoned chicken</h3>
+                    <span class="price"> $5.99/-</span>
+                    <span class="quantity">Qty: 1</span>
+                </div>
+            </div>
+
+            <div class="total"> total: $18.98</div>
+            <a href="#" class="btn">Checkout</a>
+        </div>
+
+        <form action="#" class="login-form">
+            <h3>login now</h3> <!--video 10. this makes the "login" button-->
+            <input type="email" placeholder="enter your email" class="box">
+            <input type="password" placeholder="enter your password" class="box">
+
+            <p> Forgot Your Password? <a href="#"> Click Here</a></a></p>
+            <p> Don't have an account? <a href="login-page.html"> Create Here</a></a></p>
+
+            <input type="submit" value="Login Now" class="btn">
+        </form>
+
+
+
+
+    </header>
+    <!--header section-->
+
+
+    <!--banner section-->
+
+
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>Fresh And <span>Organic</span> Products For You</h3>
+            <p>this site is created by me, G201021 so I can learn the development
+                of websites. This is a collaboration with a team project consisting
+                of 3 members, my team will modify my version of the site to finalize features.
+                Special thanks to miguel who has helped the most.
+
+                <a href="#" class="btn">shop now</a>
+            </p>
+
+
+        </div>
+    </section>
+
+    <!--banner section-->
+
+
+    <!-- our features section-->
+    <!-- video 14 -->
+
+    <section class="features" id="features">
+        <h1 class="heading"> Our <span> Features</span> </h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="image/lotsfruit.jpg">
+                <h3>wide range of food products</h3>
+                <p>We have a variety of food selection to keep you on your study grind!</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <img src="image/delivery.jpg">
+                <h3>Delivery</h3>
+                <p>We know school is hard. That is why we deliver right to your dorm for your convenience!</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <img src="image/grabandgo.png">
+                <h3>Grab And GO!</h3>
+                <p>Our market is equipped with the latest computer vision technology to provide a cashier-less
+                    experience. Scan your school ID card, grab and GO! </p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <img src="image/curbsidepickup.png">
+                <h3>Curbside Pick-up</h3>
+                <p>You are not in your dorm for delivery? No Problem! Pick-UP your favorite items. Just ping us through
+                    your Mercy app! </p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+    </section>
+    <!--our features section-->
+
+
+    <!--our products section-->
+
+    <section class="products" id="products">
+        <h1 class="heading"> Most <span> Popular</span></h1>
+
+        <div class="swiper product-slider">
+
+            <div class="swiper-wrapper" data-product-id="1"> <!--datap-product-id="1"-->
+                <div class="swiper-slide box">
+                    <img src="image/asus_ally.webp">
+                    <h1>Asus Ally z1 Extreme</h1>
+                    <div class="price"> $699</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i><!--stars under product 5 stars and a half-->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <a href="" class="btn"> add-to-cart</a>
+                </div>
+
+                <div class="swiper-slide box" data-product-id="2">
+                    <img src="image/face_serum.jpg">
+                    <h1>skin cleanser</h1>
+                    <div class="price"> $11.99</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <a href="" class="btn"> add to cart</a>
+                </div>
+
+                <div class="swiper-slide box" data-product-id="3">
+                    <img src="image/dragonfruit.webp">
+                    <h1>Dragon Fruit</h1>
+                    <div class="price"> $5.45</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <a href="" class="btn"> add to cart</a>
+                </div>
+
+                <div class="swiper-slide box" data-product-id="4">
+                    <img src="image/hotfries.jpg">
+                    <h1>Hot Fries</h1>
+                    <div class="price"> $12.99/</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <a href="" class="btn"> add to cart</a>
+                </div>
+
+                <div class="swiper-slide box" data-product-id="5">
+                    <img src="image/readytoeat_salad.jpg">
+                    <h1>Ready to eat salad</h1>
+                    <div class="price"> $9.99</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <a href="" class="btn"> add to cart</a>
+                </div>
+
+                <div class="swiper-slide box" data-product-id="6">
+                    <img src="image/french_burger_dip.jpg">
+                    <h1>French Burger Dip</h1>
+                    <div class="price"> $16.99</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <a href="" class="btn"> add to cart</a>
+                </div>
+            </div>
+        </div><!--looks like the background design was brought over here automatically aswell-->
+    </section>
+    <!--our products section-->
+
+
+    <!---product categories-->
+
+    <section class="categories" id="categories">
+        <h1 class="heading"> product <span> categories </span></h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="image/cat-1.png">
+                <h3>fresh and Organic!</h3>
+                <p> up to 45% off</p>
+                <a href="#" class="btn"> shop now</a>
+            </div>
+            <div class="box">
+                <img src="image/mealsonthego.jpg">
+                <h3>meals on the GO!</h3>
+                <p> up to 45% off</p>
+                <a href="#" class="btn"> shop now</a>
+            </div>
+            <div class="box">
+                <img src="image/personal_care.jpg">
+                <h3>Personal Care</h3>
+                <p> up to 45% off</p>
+                <a href="#" class="btn"> shop now</a>
+            </div>
+            <div class="box">
+                <img src="image/collegeessentials.jpg">
+                <h3>College Essentials</h3>
+                <p> up to 45% off</p>
+                <a href="#" class="btn"> shop now</a>
+            </div>
+
+            <div class="box">
+                <img src="image/merch.png">
+                <h3>Merch</h3>
+                <p> up to 45% off</p>
+                <a href="#" class="btn"> shop now</a>
+            </div>
+
+            <div class="box">
+                <img src="image/technology.webp">
+                <h3>Technology</h3>
+                <p> up to 20% off</p>
+                <a href="#" class="btn"> shop now</a>
+            </div>
+        </div>
+    </section>
+
+    <!--product categories-->
+
+    <!--review section-->
+
+    <section class="review" id="review">
+        <h1 class="heading"> customer's<span> reviews </span></h1>
+
+        <div class="swiper review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="image/simba.jpg">
+                    <p>They have quail eggs and tuna. This market is the cats meow</p>
+                    <h3>Simba</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/catalyna.png">
+                    <p>Everything in the food section is fresh and have a great variety, they also have meals on the go.
+                    </p>
+                    <h3>Catalyna</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/anonymouz_MG.png">
+                    <p>They have everything I need to get through the semester withou having to drive farther.</p>
+                    <h3>Anonymouz_MG</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/plushie_catXD.jpg">
+                    <p>what I like about this new shop is that they have food, snacks, and utilities, personal care
+                        stuff and tech.</p>
+                    <h3>Elgat000_Katz3</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--review section-->
+
+
+    <!--blog section-->
+
+    <section class="blogs" id="blogs">
+        <h1 class="heading"> Our <span>Blogs</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="image/blogevent1.png">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"><i class="fa fa-user"></i>Campus Life</a>
+                        <a href="#"><i class="fa fa-calendar"></i>1st May, 2021</a>
+                    </div>
+                    <h3>Take a break from your finals and classes with Campus Life Stress Less Week Board Game Day! From
+                        1 PM - 3 PM in the Hudson Commuter Lounge on December 7th</h3>
+                    <p>Location: Hudson Hall Commuter Lounge. 555 BroadWay, Dobbs Ferry, New York</p>
+                    <a href="https://engage.mercy.edu/event/9643151" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="image/blogevent2.png">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"><i class="fa fa-user"></i>Campus Life </a>
+                        <a href="#"><i class="fa fa-calendar"></i>December 5th-7th, 2023</a>
+                    </div>
+                    <h3>Have an exam and need coffee or hot cocoa? Look no further than the activities desk! Grab
+                        yourself some coffee and make yourself a smore!</h3>
+                    <p>Location: Manhattan Campus, 3rd Floor Activities Desk!</p>
+                    <a href="https://engage.mercy.edu/event/9637407" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="image/blogevent4.png">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"><i class="fa fa-user"></i>Founders Hall</a>
+                        <a href="#"><i class="fa fa-calendar"></i>April 19, 2024</a>
+                    </div>
+                    <h3>Save the Date for our 2024 Spring Fling concert! Artist will be announced in March!</h3>
+                    <p>Perks: Free Food, Free Stuff</p>
+                    <a href="https://engage.mercy.edu/event/9617387" class="btn">read more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="image/blogevent3.png">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"><i class="fa fa-user"></i>Founders Hall</a>
+                        <a href="#"><i class="fa fa-calendar"></i>December 10, 2023</a>
+                    </div>
+                    <h3>Come join RA Mo and Ra Dani for a fun Sunday night! A night to distress and have fun with your
+                        peers!</h3>
+                    <p>Perks: Free Food</p>
+                    <a href="https://engage.mercy.edu/event/9629807" class="btn">read more</a>
+                </div>
+    </section>
+
+    <!--blog section-->
+
+
+    <!--footer section-->
+
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Groco <i class="fa fa-shopping-basket"></i></h3>
+                <p>Feel free to follow us on our social media pages</p>
+                <div class="share">
+                    <a href="#" class="links"> <i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="links"> <i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="links"> <i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="links"> <i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <h3> contact info </h3>
+                <a href="#" class="links"> <i class="fa fa-phone"></i>+1 555-555-6455</a>
+                <a href="#" class="links"> <i class="fa fa-envelope"></i>mercyuniversity@edu.com</a>
+                <a href="#" class="links"> <i class="fa fa-map-marker"></i>Dobbs Ferry, NY</a>
+            </div>
+            <div class="box">
+                <h3> quick links </h3>
+                <a href="#" class="links"> <i class="fa fa-arrow-right"></i>Home</a>
+                <a href="#" class="links"> <i class="fa fa-arrow-right"></i>Features</a>
+                <a href="#" class="links"> <i class="fa fa-arrow-right"></i>Products</a>
+                <a href="#" class="links"> <i class="fa fa-arrow-right"></i>Categories</a>
+                <a href="#" class="links"> <i class="fa fa-arrow-right"></i>Review</a>
+                <a href="#" class="links"> <i class="fa fa-arrow-right"></i>Blogs</a>
+            </div>
+
+
+            <div class="box">
+                <h3> Newsletter </h3>
+                <p>Subscribe for latest updates</p>
+                <input type="email" placeholder="Your Email" class="email">
+                <input type="submit" value="subscribe" class="btn">
+                <img src="image/payment.png" class="payment-img">
+            </div>
+        </div>
+
+        <div class="credit">created for software engineering project 2023 | All Rights Reserved</div>
+
+    </section>
+
+    <!--footer section-->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
